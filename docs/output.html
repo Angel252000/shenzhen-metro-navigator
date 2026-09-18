@@ -1,0 +1,69 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Shenzhen Metro Navigator — CLI output</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; padding: 28px; background: #0c1016; font: 13px/1.55 ui-monospace, Menlo, monospace; }
+  .frame { max-width: 1180px; margin: 0 auto; background: #11161d; border: 1px solid #222d3a;
+           border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.55); }
+  .bar { display: flex; align-items: center; gap: 8px; padding: 11px 15px;
+          background: #161d27; border-bottom: 1px solid #222d3a; }
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .r { background:#ff5f56 } .y { background:#ffbd2e } .g { background:#27c93f }
+  .bar span.t { margin-left: 10px; color: #7f8ea3; font-size: 12px; }
+  section { padding: 16px 20px; border-bottom: 1px solid #1b242f; }
+  section:last-child { border-bottom: 0; }
+  .cmd { color: #cfd9e6; margin-bottom: 9px; }
+  .dollar { color: #00c364; margin-right: 7px; }
+  pre { margin: 0; color: #dde5ef; white-space: pre; overflow-x: auto; }
+</style>
+<div class="frame">
+  <div class="bar"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i>
+    <span class="t">shenzhen-metro — python3 main.py</span></div>
+  <section><div class="cmd"><span class="dollar">$</span> python3 main.py</div><pre>==============================================================
+  🚇  SHENZHEN METRO SMART NAVIGATOR  ·  深圳地铁导航
+==============================================================
+  6 lines · 141 stations · 15 transfer points
+  2 min per stop · 5 min per transfer · offline, no network needed
+
+
+FROM: choose a station on Line 1 (1号线)
+--------------------------------------------------------------
+  1. Luohu 罗湖                                   11. Chegongmiao 车公庙 ⇄                         21. Liyumen 鲤鱼门
+  2. Guomao 国贸                                  12. Zhuzilin 竹子林                              22. Qianhaiwan 前海湾 ⇄
+  3. Laojie 老街 ⇄                                13. Qiaocheng East 侨城东                        23. Xin&#x27;an 新安
+  4. Grand Theater 大剧院 ⇄                       14. Overseas Chinese Town 华侨城                 24. Bao&#x27;an Center 宝安中心 ⇄
+  5. Science Museum 科学馆                        15. Window of the World 世界之窗 ⇄               25. Baoti 宝体
+  6. Huaqiang Road 华强路                         16. Baishizhou 白石洲                            26. Pingzhou 坪洲
+  7. Gangxia 岗厦                                 17. Hi-Tech Park 高新园                          27. Xixiang 西乡
+  8. Convention &amp; Exhibition Center 会展中心 ⇄    18. Shenzhen University 深大                     28. Gushu 固戍
+  9. Shopping Park 购物公园 ⇄                     19. Taoyuan 桃园                                 29. Hourui 后瑞
+ 10. Xiangmihu 香蜜湖                             20. Daxin 大新                                   30. Airport East 机场东
+  0. « pick another line    q. quit
+Choice: 1</pre></section>
+<section><div class="cmd"><span class="dollar">$</span> route found</div><pre>Luohu 罗湖  →  Shenzhen North Station 深圳北站
+--------------------------------------------------------------
+1. Board Line 1 (1号线) at Luohu 罗湖, heading towards Airport East 机场东.
+2. Ride 7 stops to Convention &amp; Exhibition Center 会展中心.
+3. At Convention &amp; Exhibition Center 会展中心, transfer to Line 4 (4号线) heading towards Niuhu 牛湖.
+4. Ride 7 stops to Shenzhen North Station 深圳北站.
+5. Get off at Shenzhen North Station 深圳北站. You have arrived.
+
+Total: 14 stops, 1 change, about 33 minutes.
+--------------------------------------------------------------
+Lines used: Line 1 → Line 4</pre></section>
+<section><div class="cmd"><span class="dollar">$</span> python3 main.py --from Luohu --to &quot;Airport East&quot; --lang en</div><pre>1. Board Line 1 at Luohu, heading towards Airport East.
+2. Ride 10 stops to Chegongmiao.
+3. At Chegongmiao, transfer to Line 11 heading towards Bitou.
+4. Ride 4 stops to Qianhaiwan.
+5. At Qianhaiwan, transfer to Line 1 heading towards Airport East.
+6. Ride 8 stops to Airport East.
+7. Get off at Airport East. You have arrived.
+
+Total: 22 stops, 2 changes, about 54 minutes.</pre></section>
+<section><div class="cmd"><span class="dollar">$</span> python3 main.py --from 罗湖 --to 会展中心 --lang zh</div><pre>1. 在 罗湖 乘坐 1号线，往 机场东 方向。
+2. 乘坐 7 站到 会展中心。
+3. 在 会展中心 下车，到达目的地。
+
+共 7 站，0 次换乘，约 14 分钟。</pre></section>
+</div>

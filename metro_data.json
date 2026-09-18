@@ -1,0 +1,775 @@
+{
+  "network": "Shenzhen Metro (subset)",
+  "timing": {
+    "minutes_per_stop": 2,
+    "minutes_per_transfer": 5
+  },
+  "lines": {
+    "Line 1": {
+      "zh": "1号线",
+      "nickname": "Luobao Line",
+      "color": "#00A651",
+      "stations": [
+        "luohu",
+        "guomao",
+        "laojie",
+        "grand_theater",
+        "science_museum",
+        "huaqiang_road",
+        "gangxia",
+        "convention_exhibition_center",
+        "shopping_park",
+        "xiangmihu",
+        "chegongmiao",
+        "zhuzilin",
+        "qiaocheng_east",
+        "overseas_chinese_town",
+        "window_of_the_world",
+        "baishizhou",
+        "hi_tech_park",
+        "shenzhen_university",
+        "taoyuan",
+        "daxin",
+        "liyumen",
+        "qianhaiwan",
+        "xinan",
+        "baoan_center",
+        "baoti",
+        "pingzhou",
+        "xixiang",
+        "gushu",
+        "hourui",
+        "airport_east"
+      ]
+    },
+    "Line 2": {
+      "zh": "2号线",
+      "nickname": "Shekou Line",
+      "color": "#F58220",
+      "stations": [
+        "chiwan",
+        "shekou_port",
+        "sea_world",
+        "shuiwan",
+        "dongjiaotou",
+        "wanxia",
+        "haiyue",
+        "dengliang",
+        "houhai",
+        "keyuan",
+        "hongshuwan",
+        "window_of_the_world",
+        "qiaocheng_north",
+        "shenkang",
+        "antuoshan",
+        "qiaoxiang",
+        "xiangmi",
+        "xiangmei_north",
+        "jingtian",
+        "lianhua_west",
+        "futian",
+        "civic_center",
+        "gangxia_north",
+        "huaqiang_north",
+        "yannan",
+        "grand_theater",
+        "hubei",
+        "huangbeiling",
+        "xinxiu"
+      ]
+    },
+    "Line 3": {
+      "zh": "3号线",
+      "nickname": "Longgang Line",
+      "color": "#0072BC",
+      "stations": [
+        "fubao",
+        "yitian",
+        "shixia",
+        "shopping_park",
+        "futian",
+        "childrens_palace",
+        "lianhuacun",
+        "huaxin",
+        "tongxinling",
+        "hongling",
+        "laojie",
+        "shaibu",
+        "cuizhu",
+        "tianbei",
+        "shuibei",
+        "caopu",
+        "buji",
+        "mumianwan",
+        "dafen",
+        "danzhutou",
+        "liuyue",
+        "tangkeng",
+        "henggang",
+        "yonghu",
+        "heao",
+        "universiade",
+        "ailian",
+        "jixiang",
+        "longcheng_square",
+        "nanlian",
+        "shuanglong"
+      ]
+    },
+    "Line 4": {
+      "zh": "4号线",
+      "nickname": "Longhua Line",
+      "color": "#E4002B",
+      "stations": [
+        "futian_checkpoint",
+        "fumin",
+        "convention_exhibition_center",
+        "civic_center",
+        "childrens_palace",
+        "lianhua_north",
+        "shangmeilin",
+        "minle",
+        "baishilong",
+        "shenzhen_north",
+        "hongshan",
+        "shangtang",
+        "longsheng",
+        "longhua",
+        "qinghu",
+        "qinghu_north",
+        "zhucun",
+        "qiankeng",
+        "changhu",
+        "guanlan",
+        "songyuanxia",
+        "mission_hills",
+        "niuhu"
+      ]
+    },
+    "Line 5": {
+      "zh": "5号线",
+      "nickname": "Huanzhong Line",
+      "color": "#A54F9B",
+      "stations": [
+        "qianhaiwan",
+        "linhai",
+        "baohua",
+        "baoan_center",
+        "fanshen",
+        "lingzhi",
+        "honglang_north",
+        "xingdong",
+        "liuxiandong",
+        "xili",
+        "university_town",
+        "tanglang",
+        "changlingpi",
+        "shenzhen_north",
+        "minzhi",
+        "wuhe",
+        "bantian",
+        "yangmei",
+        "shangshuijing",
+        "xiashuijing",
+        "changlong",
+        "buji",
+        "baigelong",
+        "buxin",
+        "taian",
+        "yijing",
+        "huangbeiling"
+      ]
+    },
+    "Line 11": {
+      "zh": "11号线",
+      "nickname": "Airport Line",
+      "color": "#7D3F98",
+      "stations": [
+        "futian",
+        "chegongmiao",
+        "hongshuwan_south",
+        "houhai",
+        "nanshan",
+        "qianhaiwan",
+        "baoan",
+        "bihaiwan",
+        "airport",
+        "airport_north",
+        "fuyong",
+        "qiaotou",
+        "tangwei",
+        "maanshan",
+        "shajing",
+        "houting",
+        "songgang",
+        "bitou"
+      ]
+    }
+  },
+  "stations": {
+    "luohu": {
+      "en": "Luohu",
+      "zh": "罗湖"
+    },
+    "guomao": {
+      "en": "Guomao",
+      "zh": "国贸"
+    },
+    "laojie": {
+      "en": "Laojie",
+      "zh": "老街"
+    },
+    "grand_theater": {
+      "en": "Grand Theater",
+      "zh": "大剧院"
+    },
+    "science_museum": {
+      "en": "Science Museum",
+      "zh": "科学馆"
+    },
+    "huaqiang_road": {
+      "en": "Huaqiang Road",
+      "zh": "华强路"
+    },
+    "gangxia": {
+      "en": "Gangxia",
+      "zh": "岗厦"
+    },
+    "convention_exhibition_center": {
+      "en": "Convention & Exhibition Center",
+      "zh": "会展中心"
+    },
+    "shopping_park": {
+      "en": "Shopping Park",
+      "zh": "购物公园"
+    },
+    "xiangmihu": {
+      "en": "Xiangmihu",
+      "zh": "香蜜湖"
+    },
+    "chegongmiao": {
+      "en": "Chegongmiao",
+      "zh": "车公庙"
+    },
+    "zhuzilin": {
+      "en": "Zhuzilin",
+      "zh": "竹子林"
+    },
+    "qiaocheng_east": {
+      "en": "Qiaocheng East",
+      "zh": "侨城东"
+    },
+    "overseas_chinese_town": {
+      "en": "Overseas Chinese Town",
+      "zh": "华侨城"
+    },
+    "window_of_the_world": {
+      "en": "Window of the World",
+      "zh": "世界之窗"
+    },
+    "baishizhou": {
+      "en": "Baishizhou",
+      "zh": "白石洲"
+    },
+    "hi_tech_park": {
+      "en": "Hi-Tech Park",
+      "zh": "高新园"
+    },
+    "shenzhen_university": {
+      "en": "Shenzhen University",
+      "zh": "深大"
+    },
+    "taoyuan": {
+      "en": "Taoyuan",
+      "zh": "桃园"
+    },
+    "daxin": {
+      "en": "Daxin",
+      "zh": "大新"
+    },
+    "liyumen": {
+      "en": "Liyumen",
+      "zh": "鲤鱼门"
+    },
+    "qianhaiwan": {
+      "en": "Qianhaiwan",
+      "zh": "前海湾"
+    },
+    "xinan": {
+      "en": "Xin'an",
+      "zh": "新安"
+    },
+    "baoan_center": {
+      "en": "Bao'an Center",
+      "zh": "宝安中心"
+    },
+    "baoti": {
+      "en": "Baoti",
+      "zh": "宝体"
+    },
+    "pingzhou": {
+      "en": "Pingzhou",
+      "zh": "坪洲"
+    },
+    "xixiang": {
+      "en": "Xixiang",
+      "zh": "西乡"
+    },
+    "gushu": {
+      "en": "Gushu",
+      "zh": "固戍"
+    },
+    "hourui": {
+      "en": "Hourui",
+      "zh": "后瑞"
+    },
+    "airport_east": {
+      "en": "Airport East",
+      "zh": "机场东"
+    },
+    "chiwan": {
+      "en": "Chiwan",
+      "zh": "赤湾"
+    },
+    "shekou_port": {
+      "en": "Shekou Port",
+      "zh": "蛇口港"
+    },
+    "sea_world": {
+      "en": "Sea World",
+      "zh": "海上世界"
+    },
+    "shuiwan": {
+      "en": "Shuiwan",
+      "zh": "水湾"
+    },
+    "dongjiaotou": {
+      "en": "Dongjiaotou",
+      "zh": "东角头"
+    },
+    "wanxia": {
+      "en": "Wanxia",
+      "zh": "湾厦"
+    },
+    "haiyue": {
+      "en": "Haiyue",
+      "zh": "海月"
+    },
+    "dengliang": {
+      "en": "Dengliang",
+      "zh": "登良"
+    },
+    "houhai": {
+      "en": "Houhai",
+      "zh": "后海"
+    },
+    "keyuan": {
+      "en": "Keyuan",
+      "zh": "科苑"
+    },
+    "hongshuwan": {
+      "en": "Hongshuwan",
+      "zh": "红树湾"
+    },
+    "qiaocheng_north": {
+      "en": "Qiaocheng North",
+      "zh": "侨城北"
+    },
+    "shenkang": {
+      "en": "Shenkang",
+      "zh": "深康"
+    },
+    "antuoshan": {
+      "en": "Antuoshan",
+      "zh": "安托山"
+    },
+    "qiaoxiang": {
+      "en": "Qiaoxiang",
+      "zh": "侨香"
+    },
+    "xiangmi": {
+      "en": "Xiangmi",
+      "zh": "香蜜"
+    },
+    "xiangmei_north": {
+      "en": "Xiangmei North",
+      "zh": "香梅北"
+    },
+    "jingtian": {
+      "en": "Jingtian",
+      "zh": "景田"
+    },
+    "lianhua_west": {
+      "en": "Lianhua West",
+      "zh": "莲花西"
+    },
+    "futian": {
+      "en": "Futian",
+      "zh": "福田"
+    },
+    "civic_center": {
+      "en": "Civic Center",
+      "zh": "市民中心"
+    },
+    "gangxia_north": {
+      "en": "Gangxia North",
+      "zh": "岗厦北"
+    },
+    "huaqiang_north": {
+      "en": "Huaqiang North",
+      "zh": "华强北"
+    },
+    "yannan": {
+      "en": "Yannan",
+      "zh": "燕南"
+    },
+    "hubei": {
+      "en": "Hubei",
+      "zh": "湖贝"
+    },
+    "huangbeiling": {
+      "en": "Huangbeiling",
+      "zh": "黄贝岭"
+    },
+    "xinxiu": {
+      "en": "Xinxiu",
+      "zh": "新秀"
+    },
+    "fubao": {
+      "en": "Fubao",
+      "zh": "福保"
+    },
+    "yitian": {
+      "en": "Yitian",
+      "zh": "益田"
+    },
+    "shixia": {
+      "en": "Shixia",
+      "zh": "石厦"
+    },
+    "childrens_palace": {
+      "en": "Children's Palace",
+      "zh": "少年宫"
+    },
+    "lianhuacun": {
+      "en": "Lianhuacun",
+      "zh": "莲花村"
+    },
+    "huaxin": {
+      "en": "Huaxin",
+      "zh": "华新"
+    },
+    "tongxinling": {
+      "en": "Tongxinling",
+      "zh": "通新岭"
+    },
+    "hongling": {
+      "en": "Hongling",
+      "zh": "红岭"
+    },
+    "shaibu": {
+      "en": "Shaibu",
+      "zh": "晒布"
+    },
+    "cuizhu": {
+      "en": "Cuizhu",
+      "zh": "翠竹"
+    },
+    "tianbei": {
+      "en": "Tianbei",
+      "zh": "田贝"
+    },
+    "shuibei": {
+      "en": "Shuibei",
+      "zh": "水贝"
+    },
+    "caopu": {
+      "en": "Caopu",
+      "zh": "草埔"
+    },
+    "buji": {
+      "en": "Buji",
+      "zh": "布吉"
+    },
+    "mumianwan": {
+      "en": "Mumianwan",
+      "zh": "木棉湾"
+    },
+    "dafen": {
+      "en": "Dafen",
+      "zh": "大芬"
+    },
+    "danzhutou": {
+      "en": "Danzhutou",
+      "zh": "丹竹头"
+    },
+    "liuyue": {
+      "en": "Liuyue",
+      "zh": "六约"
+    },
+    "tangkeng": {
+      "en": "Tangkeng",
+      "zh": "塘坑"
+    },
+    "henggang": {
+      "en": "Henggang",
+      "zh": "横岗"
+    },
+    "yonghu": {
+      "en": "Yonghu",
+      "zh": "永湖"
+    },
+    "heao": {
+      "en": "He'ao",
+      "zh": "荷坳"
+    },
+    "universiade": {
+      "en": "Universiade",
+      "zh": "大运"
+    },
+    "ailian": {
+      "en": "Ailian",
+      "zh": "爱联"
+    },
+    "jixiang": {
+      "en": "Jixiang",
+      "zh": "吉祥"
+    },
+    "longcheng_square": {
+      "en": "Longcheng Square",
+      "zh": "龙城广场"
+    },
+    "nanlian": {
+      "en": "Nanlian",
+      "zh": "南联"
+    },
+    "shuanglong": {
+      "en": "Shuanglong",
+      "zh": "双龙"
+    },
+    "futian_checkpoint": {
+      "en": "Futian Checkpoint",
+      "zh": "福田口岸"
+    },
+    "fumin": {
+      "en": "Fumin",
+      "zh": "福民"
+    },
+    "lianhua_north": {
+      "en": "Lianhua North",
+      "zh": "莲花北"
+    },
+    "shangmeilin": {
+      "en": "Shangmeilin",
+      "zh": "上梅林"
+    },
+    "minle": {
+      "en": "Minle",
+      "zh": "民乐"
+    },
+    "baishilong": {
+      "en": "Baishilong",
+      "zh": "白石龙"
+    },
+    "shenzhen_north": {
+      "en": "Shenzhen North Station",
+      "zh": "深圳北站"
+    },
+    "hongshan": {
+      "en": "Hongshan",
+      "zh": "红山"
+    },
+    "shangtang": {
+      "en": "Shangtang",
+      "zh": "上塘"
+    },
+    "longsheng": {
+      "en": "Longsheng",
+      "zh": "龙胜"
+    },
+    "longhua": {
+      "en": "Longhua",
+      "zh": "龙华"
+    },
+    "qinghu": {
+      "en": "Qinghu",
+      "zh": "清湖"
+    },
+    "qinghu_north": {
+      "en": "Qinghu North",
+      "zh": "清湖北"
+    },
+    "zhucun": {
+      "en": "Zhucun",
+      "zh": "竹村"
+    },
+    "qiankeng": {
+      "en": "Qiankeng",
+      "zh": "茜坑"
+    },
+    "changhu": {
+      "en": "Changhu",
+      "zh": "长湖"
+    },
+    "guanlan": {
+      "en": "Guanlan",
+      "zh": "观澜"
+    },
+    "songyuanxia": {
+      "en": "Songyuanxia",
+      "zh": "松元厦"
+    },
+    "mission_hills": {
+      "en": "Mission Hills",
+      "zh": "观澜湖"
+    },
+    "niuhu": {
+      "en": "Niuhu",
+      "zh": "牛湖"
+    },
+    "linhai": {
+      "en": "Linhai",
+      "zh": "临海"
+    },
+    "baohua": {
+      "en": "Baohua",
+      "zh": "宝华"
+    },
+    "fanshen": {
+      "en": "Fanshen",
+      "zh": "翻身"
+    },
+    "lingzhi": {
+      "en": "Lingzhi",
+      "zh": "灵芝"
+    },
+    "honglang_north": {
+      "en": "Honglang North",
+      "zh": "洪浪北"
+    },
+    "xingdong": {
+      "en": "Xingdong",
+      "zh": "兴东"
+    },
+    "liuxiandong": {
+      "en": "Liuxiandong",
+      "zh": "留仙洞"
+    },
+    "xili": {
+      "en": "Xili",
+      "zh": "西丽"
+    },
+    "university_town": {
+      "en": "University Town",
+      "zh": "大学城"
+    },
+    "tanglang": {
+      "en": "Tanglang",
+      "zh": "塘朗"
+    },
+    "changlingpi": {
+      "en": "Changlingpi",
+      "zh": "长岭陂"
+    },
+    "minzhi": {
+      "en": "Minzhi",
+      "zh": "民治"
+    },
+    "wuhe": {
+      "en": "Wuhe",
+      "zh": "五和"
+    },
+    "bantian": {
+      "en": "Bantian",
+      "zh": "坂田"
+    },
+    "yangmei": {
+      "en": "Yangmei",
+      "zh": "杨美"
+    },
+    "shangshuijing": {
+      "en": "Shangshuijing",
+      "zh": "上水径"
+    },
+    "xiashuijing": {
+      "en": "Xiashuijing",
+      "zh": "下水径"
+    },
+    "changlong": {
+      "en": "Changlong",
+      "zh": "长龙"
+    },
+    "baigelong": {
+      "en": "Baigelong",
+      "zh": "百鸽笼"
+    },
+    "buxin": {
+      "en": "Buxin",
+      "zh": "布心"
+    },
+    "taian": {
+      "en": "Tai'an",
+      "zh": "太安"
+    },
+    "yijing": {
+      "en": "Yijing",
+      "zh": "怡景"
+    },
+    "hongshuwan_south": {
+      "en": "Hongshuwan South",
+      "zh": "红树湾南"
+    },
+    "nanshan": {
+      "en": "Nanshan",
+      "zh": "南山"
+    },
+    "baoan": {
+      "en": "Bao'an",
+      "zh": "宝安"
+    },
+    "bihaiwan": {
+      "en": "Bihaiwan",
+      "zh": "碧海湾"
+    },
+    "airport": {
+      "en": "Airport",
+      "zh": "机场"
+    },
+    "airport_north": {
+      "en": "Airport North",
+      "zh": "机场北"
+    },
+    "fuyong": {
+      "en": "Fuyong",
+      "zh": "福永"
+    },
+    "qiaotou": {
+      "en": "Qiaotou",
+      "zh": "桥头"
+    },
+    "tangwei": {
+      "en": "Tangwei",
+      "zh": "塘尾"
+    },
+    "maanshan": {
+      "en": "Ma'anshan",
+      "zh": "马安山"
+    },
+    "shajing": {
+      "en": "Shajing",
+      "zh": "沙井"
+    },
+    "houting": {
+      "en": "Houting",
+      "zh": "后亭"
+    },
+    "songgang": {
+      "en": "Songgang",
+      "zh": "松岗"
+    },
+    "bitou": {
+      "en": "Bitou",
+      "zh": "碧头"
+    }
+  }
+}

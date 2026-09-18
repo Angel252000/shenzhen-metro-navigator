@@ -1,0 +1,89 @@
+{
+  "start": "chiwan",
+  "end": "shenzhen_north",
+  "steps": [
+    {
+      "action": "board",
+      "line": "Line 2",
+      "station": "chiwan",
+      "direction": "xinxiu"
+    },
+    {
+      "action": "travel",
+      "line": "Line 2",
+      "stops": 8,
+      "from": "chiwan",
+      "to": "houhai",
+      "through": [
+        "shekou_port",
+        "sea_world",
+        "shuiwan",
+        "dongjiaotou",
+        "wanxia",
+        "haiyue",
+        "dengliang"
+      ]
+    },
+    {
+      "action": "transfer",
+      "from_line": "Line 2",
+      "to_line": "Line 11",
+      "at_station": "houhai",
+      "direction": "futian"
+    },
+    {
+      "action": "travel",
+      "line": "Line 11",
+      "stops": 3,
+      "from": "houhai",
+      "to": "futian",
+      "through": [
+        "hongshuwan_south",
+        "chegongmiao"
+      ]
+    },
+    {
+      "action": "transfer",
+      "from_line": "Line 11",
+      "to_line": "Line 3",
+      "at_station": "futian",
+      "direction": "shuanglong"
+    },
+    {
+      "action": "travel",
+      "line": "Line 3",
+      "stops": 1,
+      "from": "futian",
+      "to": "childrens_palace",
+      "through": []
+    },
+    {
+      "action": "transfer",
+      "from_line": "Line 3",
+      "to_line": "Line 4",
+      "at_station": "childrens_palace",
+      "direction": "niuhu"
+    },
+    {
+      "action": "travel",
+      "line": "Line 4",
+      "stops": 5,
+      "from": "childrens_palace",
+      "to": "shenzhen_north",
+      "through": [
+        "lianhua_north",
+        "shangmeilin",
+        "minle",
+        "baishilong"
+      ]
+    },
+    {
+      "action": "exit",
+      "station": "shenzhen_north",
+      "line": "Line 4"
+    }
+  ],
+  "total_stops": 17,
+  "transfers": 3,
+  "total_minutes": 49
+}

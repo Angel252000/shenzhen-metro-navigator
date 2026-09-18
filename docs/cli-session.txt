@@ -1,0 +1,87 @@
+==============================================================
+  🚇  SHENZHEN METRO SMART NAVIGATOR  ·  深圳地铁导航
+==============================================================
+  6 lines · 141 stations · 15 transfer points
+  2 min per stop · 5 min per transfer · offline, no network needed
+
+Main menu
+--------------------------------------------------------------
+  1. Plan a route
+  2. Browse a line
+  3. List transfer stations
+  4. Settings
+  0. Quit
+Choice: 
+FROM: choose a line
+--------------------------------------------------------------
+  1. Line 1 (1号线)  ·  Luobao Line  (30 stations)
+  2. Line 2 (2号线)  ·  Shekou Line  (29 stations)
+  3. Line 3 (3号线)  ·  Longgang Line  (31 stations)
+  4. Line 4 (4号线)  ·  Longhua Line  (23 stations)
+  5. Line 5 (5号线)  ·  Huanzhong Line  (27 stations)
+  6. Line 11 (11号线)  ·  Airport Line  (18 stations)
+  0. « back    q. quit
+Choice: 
+FROM: choose a station on Line 1 (1号线)
+--------------------------------------------------------------
+  1. Luohu 罗湖                                   11. Chegongmiao 车公庙 ⇄                         21. Liyumen 鲤鱼门
+  2. Guomao 国贸                                  12. Zhuzilin 竹子林                              22. Qianhaiwan 前海湾 ⇄
+  3. Laojie 老街 ⇄                                13. Qiaocheng East 侨城东                        23. Xin'an 新安
+  4. Grand Theater 大剧院 ⇄                       14. Overseas Chinese Town 华侨城                 24. Bao'an Center 宝安中心 ⇄
+  5. Science Museum 科学馆                        15. Window of the World 世界之窗 ⇄               25. Baoti 宝体
+  6. Huaqiang Road 华强路                         16. Baishizhou 白石洲                            26. Pingzhou 坪洲
+  7. Gangxia 岗厦                                 17. Hi-Tech Park 高新园                          27. Xixiang 西乡
+  8. Convention & Exhibition Center 会展中心 ⇄    18. Shenzhen University 深大                     28. Gushu 固戍
+  9. Shopping Park 购物公园 ⇄                     19. Taoyuan 桃园                                 29. Hourui 后瑞
+ 10. Xiangmihu 香蜜湖                             20. Daxin 大新                                   30. Airport East 机场东
+  0. « pick another line    q. quit
+Choice: 
+  ✓ From: Luohu 罗湖
+
+TO: choose a line
+--------------------------------------------------------------
+  1. Line 1 (1号线)  ·  Luobao Line  (30 stations)
+  2. Line 2 (2号线)  ·  Shekou Line  (29 stations)
+  3. Line 3 (3号线)  ·  Longgang Line  (31 stations)
+  4. Line 4 (4号线)  ·  Longhua Line  (23 stations)
+  5. Line 5 (5号线)  ·  Huanzhong Line  (27 stations)
+  6. Line 11 (11号线)  ·  Airport Line  (18 stations)
+  0. « back    q. quit
+Choice: 
+TO: choose a station on Line 4 (4号线)
+--------------------------------------------------------------
+  1. Futian Checkpoint 福田口岸                    9. Baishilong 白石龙                            17. Zhucun 竹村
+  2. Fumin 福民                                   10. Shenzhen North Station 深圳北站 ⇄            18. Qiankeng 茜坑
+  3. Convention & Exhibition Center 会展中心 ⇄    11. Hongshan 红山                                19. Changhu 长湖
+  4. Civic Center 市民中心 ⇄                      12. Shangtang 上塘                               20. Guanlan 观澜
+  5. Children's Palace 少年宫 ⇄                   13. Longsheng 龙胜                               21. Songyuanxia 松元厦
+  6. Lianhua North 莲花北                         14. Longhua 龙华                                 22. Mission Hills 观澜湖
+  7. Shangmeilin 上梅林                           15. Qinghu 清湖                                  23. Niuhu 牛湖
+  8. Minle 民乐                                   16. Qinghu North 清湖北
+  0. « pick another line    q. quit
+Choice:   ✓ To:   Shenzhen North Station 深圳北站
+
+==============================================================
+Luohu 罗湖  →  Shenzhen North Station 深圳北站
+--------------------------------------------------------------
+1. Board Line 1 (1号线) at Luohu 罗湖, heading towards Airport East 机场东.
+2. Ride 7 stops to Convention & Exhibition Center 会展中心.
+3. At Convention & Exhibition Center 会展中心, transfer to Line 4 (4号线) heading towards Niuhu 牛湖.
+4. Ride 7 stops to Shenzhen North Station 深圳北站.
+5. Get off at Shenzhen North Station 深圳北站. You have arrived.
+
+Total: 14 stops, 1 change, about 33 minutes.
+--------------------------------------------------------------
+Lines used: Line 1 → Line 4
+==============================================================
+
+Main menu
+--------------------------------------------------------------
+  1. Plan a route
+  2. Browse a line
+  3. List transfer stations
+  4. Settings
+  0. Quit
+Choice: 
+一路顺风 — have a good trip!
+
