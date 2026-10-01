@@ -52,6 +52,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="launch the tkinter interface instead of the CLI",
     )
     parser.add_argument(
+        "--voice",
+        action="store_true",
+        help=(
+            "launch the natural-language voice interface (needs a mic; "
+            "run with .venv-voice/bin/python)"
+        ),
+    )
+    parser.add_argument(
         "--from",
         dest="origin",
         metavar="STATION",
@@ -109,6 +117,10 @@ def main(argv: Optional[List[str]] = None) -> int:
             from gui import run_gui  # imported lazily: tkinter may be absent
 
             return run_gui(network, lang=args.lang)
+        if args.voice:
+            from voice import run_voice  # imported lazily: mic deps may be absent
+
+            return run_voice(network, lang=args.lang)
         from ui import CLI
 
         CLI(network, lang=args.lang).run()
@@ -117,8 +129,15 @@ def main(argv: Optional[List[str]] = None) -> int:
         print(f"error: {exc}", file=sys.stderr)
         return 1
     except ImportError as exc:
-        print(f"error: the GUI needs tkinter, which is not available ({exc})",
-              file=sys.stderr)
+        if args.voice:
+            print(
+                f"error: --voice needs its own venv, run with "
+                f".venv-voice/bin/python main.py --voice ({exc})",
+                file=sys.stderr,
+            )
+        else:
+            print(f"error: the GUI needs tkinter, which is not available ({exc})",
+                  file=sys.stderr)
         return 3
 
 
