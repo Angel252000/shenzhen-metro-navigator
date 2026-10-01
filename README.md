@@ -1,8 +1,9 @@
 # 🚇 Shenzhen Metro Smart Navigator
 
 An offline route planner for the Shenzhen Metro. Pick a start and an end
-station from menus, get plain-language directions with an estimated travel
-time. No internet, no API keys, standard library only.
+station from menus — or just ask by voice — and get plain-language
+directions with an estimated travel time. No internet, no API keys, and the
+core engine is standard library only.
 
 ```
 Luohu 罗湖  →  Shenzhen North Station 深圳北站
@@ -28,10 +29,11 @@ python3 main.py --from 罗湖 --to 会展中心 --lang zh     # Chinese in, Chin
 python3 main.py --from Chiwan --to Niuhu --json       # structured itinerary
 python3 main.py --gui                                 # tkinter interface
 python3 web.py                                        # http://127.0.0.1:8731
+.venv-voice/bin/python main.py --voice                # natural-language voice interface
 python3 -m unittest -v                                # 23 unit tests
 ```
 
-Python 3.8+. No dependencies to install.
+Python 3.8+. No dependencies to install — except `--voice`, see below.
 
 **For `--gui` only:** the interpreter needs `tkinter`, which some Homebrew
 builds omit. Check with `python3 -c "import tkinter"`; if it fails, use an
@@ -60,6 +62,7 @@ and run with `python3.13 main.py --gui`). The CLI never needs tkinter.
 | `ui.py` | CLI: numbered menus, column layout, settings. Computes nothing. |
 | `gui.py` | Optional tkinter front end with dependent combo boxes. |
 | `web.py` | A local web page on `http.server` — a third front end, still standard library only. |
+| `voice.py` | Natural-language voice interface — a fourth front end. The only one with external dependencies, isolated in `.venv-voice/`. |
 | `main.py` | Argument parsing and entry point. |
 | `test_navigator.py` | 23 unit tests over a toy network and the real map. |
 
@@ -246,6 +249,58 @@ pair cannot be selected. Results are colour-coded by line.
 
 A full transcript of a real session is in [`docs/cli-session.txt`](docs/cli-session.txt),
 and sample outputs in [`docs/`](docs/).
+
+---
+
+## Natural-language voice interface
+
+A fourth front end: ask for a route by voice, in plain language, instead of
+picking from menus — *"how do I get from Luohu to Airport East?"*
+
+```
+microphone → faster-whisper (local STT) → gemma3:1b via Ollama
+           → Router.find_route()  ←── same engine as every other interface
+           → screen + macOS `say` (local TTS)
+```
+
+It never touches routing logic — `extract_stations()` only pulls two bare
+station names out of free speech; `MetroNetwork.resolve()` (already in
+`navigator.py`) does the real matching, in English or Chinese.
+
+### Setup (one time)
+
+```bash
+brew install portaudio
+python3.12 -m venv .venv-voice
+.venv-voice/bin/pip install sounddevice numpy faster-whisper ollama
+ollama pull gemma3:1b     # ~815 MB; needs `ollama serve` running
+```
+
+### Run it
+
+```bash
+.venv-voice/bin/python main.py --voice
+```
+
+Grant microphone access to your terminal the first time macOS asks.
+
+### Why gemma3:1b, and why not Ollama's `tools` parameter
+
+`gemma3:1b` is small enough to leave headroom for Whisper on an 8 GB
+machine, but it rejects Ollama's `tools` parameter outright (`does not
+support tools`) — that's its chat template, not a capability limit.
+Extraction instead uses Ollama's `format` parameter: a JSON schema that
+constrains the output regardless of tool-calling support, with
+`temperature=0` and a prompt that strips filler words ("I'm at", "I want to
+go to"). This keeps the small model instead of needing `gemma3:4b`.
+
+### Known limitations
+
+- **macOS only** for text-to-speech (`say`). The rest of the project is
+  pure standard library; this one piece isn't.
+- **English/Chinese station names only**, same as everywhere else in the
+  app — `resolve()` wasn't changed for this interface.
+- **Six-line map**, same coverage limit as the rest of the project.
 
 ---
 
